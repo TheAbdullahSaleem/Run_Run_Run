@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://lphkfa7nx10w"]
+
+[ext_resource type="PackedScene" uid="uid://dr2qlvswlru1y" path="res://Scenes/player.tscn" id="1_jjgbg"]
+
+[node name="Main" type="Node3D" unique_id=989918239]
+
+[node name="Player" parent="." unique_id=715125765 instance=ExtResource("1_jjgbg")]
