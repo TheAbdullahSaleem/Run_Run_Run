@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cblvt8e78gca1"]
+
+[ext_resource type="Script" uid="uid://boj7ksplcg7fe" path="res://Scripts/obstacles.gd" id="1_s1st6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y1q5r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nl1qf"]
+
+[node name="Obstacle" type="StaticBody3D" unique_id=1029276973]
+script = ExtResource("1_s1st6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=755687012]
+mesh = SubResource("BoxMesh_y1q5r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=982090060]
+shape = SubResource("BoxShape3D_nl1qf")
