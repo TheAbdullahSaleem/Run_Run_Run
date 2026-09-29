@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const forward_velocity = 10
+const forward_velocity = 5
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
