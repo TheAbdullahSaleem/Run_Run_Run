@@ -22,4 +22,4 @@ func _physics_process(delta: float) -> void:
 		velocity.x = input_x * SPEED
 		
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-	move_and_slide()
+	move_and_slide()sfb
