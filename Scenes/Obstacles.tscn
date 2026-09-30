@@ -6,7 +6,7 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nl1qf"]
 
-[node name="Obstacle" type="StaticBody3D" unique_id=1029276973]
+[node name="Obstacle" type="StaticBody3D" unique_id=1029276973 groups=["obstacles"]]
 script = ExtResource("1_s1st6")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=755687012]
