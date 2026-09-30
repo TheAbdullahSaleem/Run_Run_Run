@@ -8,7 +8,7 @@ func _ready() -> void:
 	for i in range(3):
 		spawn_obstacles()
 	#spawning_obstacles()
-
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	deleting_obstacles()
