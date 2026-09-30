@@ -20,4 +20,4 @@ func spawning_obstacles():
 	while n<10:
 		n += 1
 		await get_tree().create_timer(1.0).timeout
-		spawning_obstacles()
+		spawn_obstacles()
