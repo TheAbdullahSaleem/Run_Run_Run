@@ -13,3 +13,11 @@ mesh = ExtResource("1_rxw4n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=12582791]
 shape = SubResource("BoxShape3D_nl1qf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1849939288]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 4.932701, 3.357027, 0)
+shape = SubResource("BoxShape3D_nl1qf")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=32938996]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -5.1797256, 3.357027, 0)
+shape = SubResource("BoxShape3D_nl1qf")

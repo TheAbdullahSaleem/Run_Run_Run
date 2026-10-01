@@ -4,10 +4,13 @@
 [ext_resource type="Script" uid="uid://btxdgeyq2yaeq" path="res://Scripts/main.gd" id="1_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://b2jiw812pwb4y" path="res://Scenes/Ground.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://ndcx8ah317rq" path="res://Scenes/player.scn" id="2_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://cov5vajkro6d0" path="res://Scenes/world_environment.tscn" id="2_kry3j"]
 
 [node name="Main" type="Node3D" unique_id=989918239 node_paths=PackedStringArray("Player")]
 script = ExtResource("1_jjvhh")
 Player = NodePath("Player")
+
+[node name="WorldEnvironment" parent="." unique_id=1223829262 instance=ExtResource("2_kry3j")]
 
 [node name="Player" parent="." unique_id=715125765 instance=ExtResource("2_jjvhh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1186705, 22.036697)
