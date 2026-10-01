@@ -8,7 +8,7 @@ size = Vector3(10, 0.5, 50)
 [node name="Ground" type="StaticBody3D" unique_id=1081519301 groups=["Ground"]]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1061244132]
-transform = Transform3D(10, 0, 0, 0, 0.5, 0, 0, 0, 50, 0, 0, 0)
+transform = Transform3D(0.69454634, 0, 0, 0, -1.161525e-07, 1, 0, -2.6572595, -4.371139e-08, 0.11444664, -0.3097663, 0)
 mesh = ExtResource("1_rxw4n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=12582791]
