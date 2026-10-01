@@ -16,7 +16,7 @@ func spawn_obstacles():
 	var obstacle_instance := obstacle.instantiate()
 	add_child(obstacle_instance)
 	obstacle_instance.global_position.x = randi_range(-4,4)
-	obstacle_instance.global_position.y = 0.725
+	obstacle_instance.global_position.y = 1.573
 	obstacle_instance.global_position.z = Player.global_position.z + randi_range(-40,-20)
 #func spawning_obstacles():
 	#while n<10:

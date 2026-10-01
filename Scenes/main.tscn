@@ -13,7 +13,7 @@ Player = NodePath("Player")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3751173, 22.036697)
 
 [node name="Obstacle" parent="." unique_id=1029276973 instance=ExtResource("1_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.725, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5725623, 0)
 
 [node name="Ground" parent="." unique_id=1081519301 instance=ExtResource("2_bo1nx")]
 

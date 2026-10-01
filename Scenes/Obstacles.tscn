@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://cblvt8e78gca1"]
 
 [ext_resource type="Script" uid="uid://boj7ksplcg7fe" path="res://Scripts/obstacles.gd" id="1_s1st6"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_y1q5r"]
+[ext_resource type="ArrayMesh" uid="uid://b8uj07na2hx3e" path="res://Assets/68-grenade-model/Grenade.obj" id="2_is2jm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nl1qf"]
 
@@ -10,7 +9,10 @@
 script = ExtResource("1_s1st6")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=755687012]
-mesh = SubResource("BoxMesh_y1q5r")
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.18054199, 0, 0)
+mesh = ExtResource("2_is2jm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=982090060]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
 shape = SubResource("BoxShape3D_nl1qf")
