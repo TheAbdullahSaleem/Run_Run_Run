@@ -3,16 +3,28 @@
 [ext_resource type="Script" uid="uid://boj7ksplcg7fe" path="res://Scripts/obstacles.gd" id="1_s1st6"]
 [ext_resource type="ArrayMesh" uid="uid://b8uj07na2hx3e" path="res://Assets/68-grenade-model/Grenade.obj" id="2_is2jm"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_nl1qf"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nl1qf"]
+radius = 1.0249023
+height = 4.1135254
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y1q5r"]
+radius = 0.6298828
 
 [node name="Obstacle" type="StaticBody3D" unique_id=1029276973 groups=["obstacles"]]
 script = ExtResource("1_s1st6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=445307291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4300537, 0)
+shape = SubResource("CapsuleShape3D_nl1qf")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=755687012]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.18054199, 0, 0)
 mesh = ExtResource("2_is2jm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=982090060]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-visible = false
-shape = SubResource("BoxShape3D_nl1qf")
+[node name="Area3D" type="Area3D" parent="." unique_id=276904717]
+
+[node name="CollisionShape3D1" type="CollisionShape3D" parent="Area3D" unique_id=982090060]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.3824463, 0)
+shape = SubResource("CapsuleShape3D_y1q5r")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

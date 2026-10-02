@@ -5,10 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://b2jiw812pwb4y" path="res://Scenes/Ground.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://ndcx8ah317rq" path="res://Scenes/player.scn" id="2_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://cov5vajkro6d0" path="res://Scenes/world_environment.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://ck63qjtgmowww" path="res://Scenes/game_over.tscn" id="6_21xkr"]
+[ext_resource type="PackedScene" uid="uid://ciuji1mitcwpt" path="res://Scenes/Pause.tscn" id="7_6bp64"]
 
-[node name="Main" type="Node3D" unique_id=989918239 node_paths=PackedStringArray("Player")]
+[node name="Main" type="Node3D" unique_id=989918239 node_paths=PackedStringArray("Player", "pause")]
 script = ExtResource("1_jjvhh")
 Player = NodePath("Player")
+pause = NodePath("Pause")
 
 [node name="WorldEnvironment" parent="." unique_id=1223829262 instance=ExtResource("2_kry3j")]
 
@@ -22,3 +25,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5725623, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1762202134]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5792432, 7.8789997, 12.336451)
+
+[node name="Game_Over" parent="." unique_id=1429707462 instance=ExtResource("6_21xkr")]
+
+[node name="Pause" parent="." unique_id=1897754433 instance=ExtResource("7_6bp64")]

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://ciuji1mitcwpt"]
+
+[ext_resource type="Script" uid="uid://ghsbw6fbrwyf" path="res://Scripts/pause.gd" id="1_p8av3"]
+
+[node name="Pause" type="Control" unique_id=1429707462]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8av3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1201453715]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7764706)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1897890186]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1826480606]
+layout_mode = 2
+text = "Paused"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=883429805]
+layout_mode = 2
+text = "Restart"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=153943597]
+layout_mode = 2
+text = "Start"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

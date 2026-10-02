@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dnm06bmlowl2b"]
+
+[node name="Lives" type="Label" unique_id=1235942123]
+offset_left = 1011.0
+offset_top = 21.0
+offset_right = 1132.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Lives : 3"
