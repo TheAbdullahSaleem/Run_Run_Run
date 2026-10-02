@@ -13,7 +13,7 @@ To install it go to https://uknewme.itch.io/run-ironman-run and install the vari
 Your feedbacks are very valuable for us , comment on itch i read every comment and most probly reply in less then 24 hours
 
 ## CONTROLS:
-You can use arrow keys or "A" , "D for the controls and use escape to pause or restart the game"
+You can use arrow keys or "A" , "D" for the controls and use escape to pause or restart the game and use space for jump
 
 ## AI DISCLOSURE
 only for learning no direct usage
