@@ -2,8 +2,7 @@ extends Control
 
 func _ready() -> void:
 	# Ensure the menu is hidden when the game starts
-	hide()
-
+	visible = false
 
 func toggle_pause() -> void:
 	# Toggle the paused state of the entire game engine

@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://lphkfa7nx10w"]
 
-[ext_resource type="PackedScene" uid="uid://cblvt8e78gca1" path="res://Scenes/Obstacles.tscn" id="1_8gbba"]
 [ext_resource type="Script" uid="uid://btxdgeyq2yaeq" path="res://Scripts/main.gd" id="1_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://b2jiw812pwb4y" path="res://Scenes/Ground.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://ndcx8ah317rq" path="res://Scenes/player.scn" id="2_jjvhh"]
@@ -8,18 +7,16 @@
 [ext_resource type="PackedScene" uid="uid://ck63qjtgmowww" path="res://Scenes/game_over.tscn" id="6_21xkr"]
 [ext_resource type="PackedScene" uid="uid://ciuji1mitcwpt" path="res://Scenes/Pause.tscn" id="7_6bp64"]
 
-[node name="Main" type="Node3D" unique_id=989918239 node_paths=PackedStringArray("Player", "pause")]
+[node name="Main" type="Node3D" unique_id=989918239 node_paths=PackedStringArray("Player", "pause", "gameover")]
 script = ExtResource("1_jjvhh")
 Player = NodePath("Player")
 pause = NodePath("Pause")
+gameover = NodePath("Game_Over")
 
 [node name="WorldEnvironment" parent="." unique_id=1223829262 instance=ExtResource("2_kry3j")]
 
 [node name="Player" parent="." unique_id=715125765 instance=ExtResource("2_jjvhh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1186705, 22.036697)
-
-[node name="Obstacle" parent="." unique_id=1029276973 instance=ExtResource("1_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5725623, 0)
 
 [node name="Ground" parent="." unique_id=1081519301 instance=ExtResource("2_bo1nx")]
 
